@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>出牌规则</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="play-detail-page">
+    <header class="detail-topbar">
+      <a href="./index.html#play">← 返回入局</a>
+      <strong>03 / 出牌规则</strong>
+      <a href="./play-actions.html">下一步：吃碰过 →</a>
+    </header>
+    <main class="play-detail rule-guide">
+      <section class="play-detail-hero">
+        <p>PLAY / 03</p>
+        <h1>出牌规则</h1>
+        <span>先用一页看懂：什么牌重要、怎样凑胡数、怎样从发牌走到和牌。</span>
+      </section>
+
+      <section class="rule-summary" aria-label="牌面分类">
+        <article><b>红牌</b><strong>上 大 人 可 知 礼</strong><span>6 个牌面，每个各 5 张。</span></article>
+        <article><b>精牌</b><strong>三 五 七</strong><span>3 个牌面，每个各 5 张；每种有 2 张带花边。</span></article>
+        <article><b>黑牌</b><strong>土 化 千 孔 乙 己 子<br />二 四 六 八 九 十</strong><span>13 个牌面，每个各 5 张；乙、九各有 2 张带花边。</span></article>
+        <article><b>别杠</b><strong>特殊牌</strong><span>只代花三、花五、花七。</span></article>
+      </section>
+
+      <section class="rule-block">
+        <div class="rule-block-title"><b>01</b><h2>先认识“精”与“花”</h2></div>
+        <div class="rule-block-content">
+          <p>一般场以三、五、七为精牌。它们单张各算 1 胡；带花边的花三、花五、花七各算 2 胡。带花边的乙、九叫黑花，各算 1 胡；其他单张不算胡。</p>
+          <p>有些牌局会用“五精场”：乙、三、五、七、九都算精牌，单张各 1 胡；这五种的花边牌各 2 胡。若某一种精牌的胡数高于其他精牌，它是“主精”，相关胡数翻倍。</p>
+          <div class="score-examples" aria-label="胡数牌面示例">
+            <article>
+              <div>
+                <b>三、五、七为精牌</b>
+                <p>单张精牌各算 1 胡。</p>
+              </div>
+              <div class="score-card-row">
+                <figure><img src="./assets/cards/15-三.png" alt="三" /><figcaption>1胡</figcaption></figure>
+                <figure><img src="./assets/cards/17-五.png" alt="五" /><figcaption>1胡</figcaption></figure>
+                <figure><img src="./assets/cards/19-七.png" alt="七" /><figcaption>1胡</figcaption></figure>
+              </div>
+            </article>
+            <article>
+              <div>
+                <b>花三、花五、花七</b>
+                <p>带花边的精牌各算 2 胡。</p>
+              </div>
+              <div class="score-card-row">
+                <figure><img src="./assets/cards/23-三五七.png" alt="花三" /><figcaption>2胡</figcaption></figure>
+                <figure><img src="./assets/cards/23-三五七.png" alt="花五" /><figcaption>2胡</figcaption></figure>
+                <figure><img src="./assets/cards/23-三五七.png" alt="花七" /><figcaption>2胡</figcaption></figure>
+              </div>
+            </article>
+            <article>
+              <div>
+                <b>黑花：花乙、花九</b>
+                <p>带花边的乙、九各算 1 胡。</p>
+              </div>
+              <div class="score-card-row">
+                <figure><img src="./assets/cards/05-乙.png" alt="乙" /><figcaption>1胡</figcaption></figure>
+                <figure><img src="./assets/cards/21-九.png" alt="九" /><figcaption>1胡</figcaption></figure>
+              </div>
+            </article>
+            <article>
+              <div>
+                <b>别杠</b>
+                <p>只代花三、花五、花七。</p>
+              </div>
+              <div class="score-card-row">
+                <figure><img src="./assets/cards/23-别杠.png" alt="别杠" /><figcaption>代花精</figcaption></figure>
+              </div>
+            </article>
+          </div>
+          <aside>带花边的数字牌只有：乙、三、五、七、九。</aside>
+        </div>
+      </section>
+
+      <section class="rule-block">
+        <div class="rule-block-title"><b>02</b><h2>胡牌的目标</h2></div>
+        <div class="rule-block-content">
+          <p>基础理解可以记成一句话：累计到 17 胡，并且手里只剩一个“缺口”，就具备胡牌条件。缺口是还差一张就能成句，或还差一张就能成坎的两张牌。</p>
+          <p>句子按精牌和花边黑牌的胡数相加；“上大人”“可知礼”各 1 胡。三张同牌中，自己摸齐的叫坎；四张叫统或招，五张还有再统、开泛、赶踏等进阶情况。</p>
+        </div>
+      </section>
+
+      <section class="rule-block">
+        <div class="rule-block-title"><b>03</b><h2>一局怎么开始</h2></div>
+        <div class="rule-block-content rule-steps">
+          <article><b>定庄</b><p>四人各抓一张，以抓到最大牌的人为庄家。</p></article>
+          <article><b>抓牌</b><p>庄家抓 19 张，闲家各抓 18 张；由庄家上手倒牌后，按逆时针方向依次摸牌。</p></article>
+          <article><b>摆龙</b><p>手里有四张同字牌要先亮出，称为摆龙；有龙不摆，按“烧龙”处理。</p></article>
+          <article><b>摸与打</b><p>轮到自己先摸一张，再出一张；可打单牌、拆口、圆句，也会遇到吃、碰、追口、绍牌等选择。</p></article>
+        </div>
+      </section>
+
+      <section class="rule-block rule-footnote">
+        <div class="rule-block-title"><b>04</b><h2>落叫与和牌</h2></div>
+        <div class="rule-block-content"><p>当手中已组成足够的整房与口，等待一张牌补齐时，叫“落叫”。常见等牌方式有大碰头、三条口、单钓鱼、四门叫、偏口错与满园滚。实际桌规会因地方和牌友约定而变化，这一页作为入门地图，正式对局以当桌约定为准。</p></div>
+      </section>
+      <section class="detail-next-step">
+        <span>下一步</span>
+        <a class="dark-button" href="./play-actions.html">吃 / 碰 / 过 →</a>
+      </section>
+    </main>
+  </body>
+</html>
