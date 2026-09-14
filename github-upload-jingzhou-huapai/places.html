@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>寻乡地图｜荆州花牌</title>
+    <meta name="description" content="湖北花牌的地方记忆地图。" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="map-explore-page">
+    <header class="detail-topbar">
+      <a href="./index.html#places">← 返回寻乡</a>
+      <strong>06 / 寻乡地图</strong>
+      <a href="./index.html#cards">查看牌面图鉴 →</a>
+    </header>
+
+    <main class="map-explore">
+      <section class="map-explore-header">
+        <div>
+          <p>EXPLORE / HUBEI</p>
+          <h1>花牌，从荆州出发。</h1>
+        </div>
+        <p>点击地图上的地点，查看当地花牌内容的收录状态。首版先开放荆州，松滋与恩施将随着田野资料逐步补充。</p>
+      </section>
+
+      <section class="large-map-stage" aria-label="湖北花牌地区地图">
+        <img class="hubei-outline map-art" src="./assets/images/hubei-map-outline.png" alt="湖北省轮廓地图" />
+
+        <button class="region-pin region-enshi" type="button" data-region="enshi" aria-pressed="false"><strong>恩施</strong><span>内容整理中</span></button>
+        <button class="region-pin region-songzi" type="button" data-region="songzi" aria-pressed="false"><strong>松滋</strong><span>内容整理中</span></button>
+        <button class="region-pin region-jingzhou is-active" type="button" data-region="jingzhou" aria-pressed="true"><strong>荆州</strong><span>已开放浏览</span></button>
+
+        <aside class="map-detail" id="mapDetail" aria-live="polite">
+          <b>已开放</b>
+          <h2>荆州</h2>
+          <p>从牌面图鉴、组句规则到地方口述，先从一副荆州花牌进入这座城的日常记忆。</p>
+        </aside>
+      </section>
+    </main>
+
+    <script src="./places.js"></script>
+  </body>
+</html>

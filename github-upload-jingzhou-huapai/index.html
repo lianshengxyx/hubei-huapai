@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>荆州花牌文化网站</title>
+    <meta
+      name="description"
+      content="荆州花牌文化网站首页：看见、识牌、寻根、入局、听人、寻乡。"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23f4efe4'/%3E%3Cpath d='M32 9c9 8 12 16 12 24 0 12-8 20-12 22-4-2-12-10-12-22 0-8 3-16 12-24Z' fill='%23b82319'/%3E%3Cpath d='M26 27h12M32 18v30' stroke='%23fdf8ed' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <aside class="side-rail" aria-label="章节导航">
+      <a class="side-brand" href="#see" aria-label="返回首页">
+        <strong>荆州花牌</strong>
+        <span>JINGZHOU<br />HUA PAI</span>
+      </a>
+      <nav class="chapter-nav">
+        <a href="#see" data-section="see"><b>01</b><span>看见</span><em>SEE</em></a>
+        <a href="#cards" data-section="cards"><b>02</b><span>识牌</span><em>KNOW</em></a>
+        <a href="#roots" data-section="roots"><b>03</b><span>寻根</span><em>ORIGIN</em></a>
+        <a href="#play" data-section="play"><b>04</b><span>入局</span><em>PLAY</em></a>
+        <a href="#voices" data-section="voices"><b>05</b><span>听人</span><em>STORIES</em></a>
+        <a href="#places" data-section="places"><b>06</b><span>寻乡</span><em>EXPLORE</em></a>
+      </nav>
+      <p class="rail-note">一副牌，几代荆州人的生活记忆。</p>
+      <span class="seal">荆州</span>
+    </aside>
+
+    <div class="site-shell">
+      <header class="topbar" aria-label="顶部导航">
+        <nav aria-label="主导航">
+          <a href="#see">首页</a>
+          <a href="#cards">图鉴</a>
+          <a href="#play">玩法</a>
+          <a href="#voices">故事</a>
+          <a href="#places">地图</a>
+          <a href="#roots">关于</a>
+        </nav>
+        <button class="search-button" type="button" aria-label="搜索"></button>
+        <a class="visit-button" href="#places">走进荆州 →</a>
+      </header>
+
+      <main>
+        <section class="hero panel-dark" id="see" data-observe>
+          <img class="hero-bg" src="./assets/images/hero-bg-3.png" alt="木桌上的荆州花牌场景" />
+          <div class="hero-shade"></div>
+          <div class="hero-copy">
+            <p class="eyebrow">JINGZHOU<br />HUA PAI</p>
+            <h1>荆州花牌</h1>
+            <h2>你可能见过它，<br />但你真的认识它吗？</h2>
+            <p>一副牌，几代荆州人的生活记忆。</p>
+            <a class="round-link" href="#cards" aria-label="向下探索">↓ <span>向下探索</span></a>
+          </div>
+          <aside class="hero-note">
+            <p>牌里有字，<br />也有生活。</p>
+            <p>从指尖的游戏，<br />到一座城的记忆。</p>
+            <span>JINGZHOU<br />HUA PAI</span>
+          </aside>
+        </section>
+
+        <section class="section cards-section" id="cards" data-observe>
+          <div class="section-index">
+            <b>02</b><span>识牌</span><em>KNOW</em>
+          </div>
+          <div class="section-content">
+            <div class="heading-row">
+              <div>
+                <h2>这些字，有些熟悉，<br />有些可能第一次见。</h2>
+                <p>点选字牌，试着组合出一句花牌。</p>
+              </div>
+              <a class="outline-button" href="#play">查看完整牌谱 →</a>
+            </div>
+            <div class="card-browser-wrap">
+              <button class="circle-control" type="button" id="cardPrev" aria-label="向左浏览">←</button>
+              <div class="card-browser" aria-label="字牌浏览">
+                <div class="card-track" id="cardTrack"></div>
+              </div>
+              <button class="circle-control" type="button" id="cardNext" aria-label="向右浏览">→</button>
+            </div>
+            <div class="phrase-lab">
+              <div>
+                <p class="mini-label">找出一句花牌</p>
+                <h3 id="challengeTitle">请按顺序点出“上大人”</h3>
+              </div>
+              <div class="phrase-slots" id="phraseSlots" aria-live="polite">
+                <span></span><span></span><span></span>
+              </div>
+              <strong id="challengeResult">等待选择</strong>
+              <button class="text-button" id="nextChallenge" type="button">继续挑战</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="origin-section panel-dark" id="roots" data-observe>
+          <img class="origin-bg" src="./assets/images/origin-kongzi-panorama.png" alt="孔子讲学插画资料" />
+          <img class="origin-book" src="./assets/images/origin-lunyu-book.png" alt="《论语》古籍书页" />
+          <div class="origin-copy">
+            <div class="section-index light">
+              <b>03</b><span>寻根</span><em>ORIGIN</em>
+            </div>
+            <div>
+              <h2>荆州花牌<br />从哪里来？</h2>
+              <p>一副小小的花牌，承载着文字的传承，也承载着地方的记忆与日常的生活。</p>
+              <a class="outline-light" href="./origin.html">了解它的来历 →</a>
+            </div>
+          </div>
+          <div class="origin-list">
+            <ol>
+              <li><a href="./origin.html#origin-source"><b>01</b><span>文字的源头</span><small>从传统蒙学与识字文化说起</small></a></li>
+              <li><a href="./origin.html#origin-formation"><b>02</b><span>花牌的形成</span><small>从习字到牌戏，民间的创造</small></a></li>
+              <li><a href="./origin.html#origin-jingzhou"><b>03</b><span>在荆州的流传</span><small>地方记忆与民间说法</small></a></li>
+              <li><a href="./origin.html#origin-life"><b>04</b><span>走进生活</span><small>节日、家宴与牌桌</small></a></li>
+            </ol>
+            <blockquote>不学礼，<br />无以立。<small>——《论语》</small></blockquote>
+          </div>
+        </section>
+
+        <section class="section play-section" id="play" data-observe>
+          <div class="section-index">
+            <b>04</b><span>入局</span><em>PLAY</em>
+          </div>
+          <div class="section-content play-content">
+            <div class="play-intro">
+              <h2><span>会认牌了，</span><span>要不要入一局？</span></h2>
+              <p>3 分钟，带你了解荆州花牌的基本玩法。</p>
+              <a class="dark-button" href="./play-experience.html">开始体验 →</a>
+            </div>
+            <div class="rule-cards" id="ruleCards" aria-label="玩法步骤"></div>
+          </div>
+        </section>
+
+        <section class="voices-section panel-dark" id="voices" data-observe>
+          <img class="voices-bg" src="./assets/images/card-table.jpg" alt="围桌打花牌的场景" />
+          <div class="voices-copy">
+            <div class="section-index light">
+              <b>05</b><span>听人</span><em>STORIES</em>
+            </div>
+            <div>
+              <h2>一张牌，<br />一代人的故事。</h2>
+              <p>听他们讲述关于花牌的生活、记忆与情感。</p>
+              <a class="outline-light" href="./stories.html">阅读更多故事 →</a>
+            </div>
+          </div>
+          <article class="story-feature">
+            <figure class="story-cover">
+              <img src="./assets/images/story-wang-nainai-placeholder.png" alt="王奶奶人物口述占位肖像" />
+            </figure>
+            <div class="story-text">
+              <blockquote>“以前一到过年，屋里几桌都是打花牌的。”</blockquote>
+              <p>王奶奶 / 荆州 / 76 岁</p>
+              <div class="story-body">
+                <p>她记得最清楚的，是年饭之后的那张方桌。长辈把牌摊开，孩子围在旁边认字，看不懂输赢，也能记住“上大人”“孔乙己”的声音。</p>
+                <p>花牌不只是消遣，它把过年的热闹、家里的灯火和一座城的方言，都留在了牌桌边。</p>
+              </div>
+              <div class="story-avatars" aria-label="人物故事列表">
+                <img src="./assets/images/hubei-elder-avatar-02.jpg" alt="人物故事头像二" />
+                <img src="./assets/images/hubei-elder-avatar-03.jpg" alt="人物故事头像三" />
+                <img src="./assets/images/hubei-elder-avatar-04.jpg" alt="人物故事头像四" />
+                <a href="./stories.html">更多<br />故事 →</a>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="section places-section" id="places" data-observe>
+          <div class="section-index">
+            <b>06</b><span>寻乡</span><em>EXPLORE</em>
+          </div>
+          <div class="section-content place-layout">
+            <div class="place-copy">
+              <h2>花牌不只一种。</h2>
+              <p>从荆州出发，寻找湖北不同地方的花牌记忆。</p>
+              <a class="dark-button" href="./places.html">探索更多地区 →</a>
+            </div>
+            <div class="map-panel" aria-label="湖北花牌地区状态">
+              <div class="map-shape">
+                <img class="hubei-outline map-art" src="./assets/images/hubei-map-outline.png" alt="湖北省轮廓地图" />
+                <span class="pin enshi">恩施<small>内容整理中</small></span>
+                <span class="pin songzi">松滋<small>内容整理中</small></span>
+                <span class="pin jingzhou">荆州<small>正在浏览</small></span>
+                <b>湖北</b>
+              </div>
+              <ul class="legend">
+                <li><span class="red-dot"></span>已开放</li>
+                <li><span class="gray-dot"></span>待补充</li>
+              </ul>
+            </div>
+            <p class="place-note">
+              同一副牌，<br />在不同的地方，<br />有不同的玩法，<br />也有不同的故事。
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <strong>荆州花牌</strong>
+        <span>JINGZHOU HUA PAI</span>
+        <nav aria-label="页脚导航">
+          <a href="#see">首页</a>
+          <a href="#cards">图鉴</a>
+          <a href="#play">玩法</a>
+          <a href="#voices">故事</a>
+          <a href="#places">地图</a>
+        </nav>
+        <p>© 2026 荆州花牌 · 素材可替换原型</p>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
